@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+  background-color: #0a3;
+  background-image: url("grama.jpg");  
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#info{
+  position: fixed;
+  right: 50px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: rgba(2,2,2,.2);
+}
+
+#avatar{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  display: flexbox;
+  position: absolute;
+
+}
+
+#mosquito{
+  z-index: 1000;
+  position: absolute;
+  
+}
+
+.girarPraCima{
+   transform:rotate(90deg); 
+    -webkit-transform:rotate(90deg); 
+    -moz-transform:rotate(90deg); 
+    -o-transform:rotate(90deg); 
+}
+
+.girarPraBaixo{
+   transform:rotate(270deg); 
+    -webkit-transform:rotate(270deg); 
+    -moz-transform:rotate(270deg); 
+    -o-transform:rotate(270deg); 
+}
+
+.girarPraEsquerda{
+   transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -moz-transform:rotate(0deg); 
+    -o-transform:rotate(0deg); 
+}
+
+.girarPraDireita{
+   transform:rotate(180deg); 
+    -webkit-transform:rotate(180deg); 
+    -moz-transform:rotate(180deg); 
+    -o-transform:rotate(180deg); 
+}
+
+
+#linhaEsquerda{
+  position: fixed;
+  height: 95%;
+  margin-top: 1%;
+  left: 1%;
+  border: 5px solid; 
+  border-color: rgba(255,255,255,.0);
+  width: 0px;
+}
+
+#linhaDireita{
+  position: fixed;
+  height: 95%;
+  margin-top: 1%;
+  right: 1%;
+  border: 5px solid; 
+  border-color: rgba(255,255,255,.0);
+  width: 0px;
+}
+
+#linhaSuperior{
+  position: fixed;
+  height: 10px;
+  margin-top: 1%;
+  right: 1%;
+  background: rgba(255,255,255,.0);
+  width: 98%;
+  border-width: 0; 
+}
+
+#linhaInferior{
+  position: fixed;
+  height: 10px;
+  top: 98%;
+  right: 1%;
+  background: rgba(255,255,255,.0);
+  width: 98%;
+  border-width: 0; 
+}
+
+#linha{
+  position: fixed;
+  height: 10px;
+  top: 1%;
+  right: 1%;
+  background: rgba(255,0,0,.5);
+  width: 98%;
+  border-width: 0; 
+}
+
+#changeBg{
+  float: right;
+}
+
+#campo{
+  position: fixed;
+  border: solid 7px rgba(255, 255, 255, .8);
+  padding: 10px;
+  margin: 10px;
+  width: -webkit-calc(100% - 50px);  /* para Chrome */
+  width: -moz-calc(100% - 50px);     /* para Firefox */
+  width: calc(100% - 50px);        /* para suporte nativo */
+
+  height: -webkit-calc(100% - 70px);  /* para Chrome */
+  height: -moz-calc(100% - 70px);     /* para Firefox */
+  height: calc(100% - 70px);        /* para suporte nativo */
+}
+
+#campo2{
+    position: fixed;
+  border: solid 7px rgba(255, 255, 0, .0);
+  padding: 10px;
+  margin: 10px;
+  width: 1300px;
+  height: 600px;
+}
+
+
+
+footer {
+  font-style: italic;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+  clear:both;
+  width:100%;
+}
+
+footer > a {
+  color: #00a;
+}

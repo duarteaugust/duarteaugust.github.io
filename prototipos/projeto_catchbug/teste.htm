@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="temporizador">asdfasdfasdf</div>
+
+ - 
+
+<button id="iniciar"> Iniciar contador tempo</button>
+<button id="finalizar"> Finalizar contador tempo</button>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//var tempo;
+		var momentoInicial;
+		var mometoFinal;
+
+		function verificarMomentoAtual(){
+			tempo = new Date().getTime();
+			a = "bola";
+			b = "estrela";
+			return tempo;
+
+		}
+
+		
+		function IniciarContador(){
+			momentoInicial = new Date().getTime();
+			//momentoInicial = verificarMomentoAtual() / 1000;
+			//momentoInicial = tempo.getSeconds());
+			console.log(momentoInicial)
+		}
+
+		function finalizarContador(){
+			//mometoFinal = parseInt(tempo.getSeconds());
+			//mometoFinal = verificarMomentoAtual() / 1000;
+			mometoFinal = new Date().getTime();
+			console.log(mometoFinal);
+			console.log("total: "+(mometoFinal - momentoInicial)/1000);
+		}
+
+
+		$("#iniciar").click(IniciarContador);
+
+		$("#finalizar").click(finalizarContador);
+	});
+
+   function startTime() {
+     var today=new Date();
+     //console.log(today.getTime());
+     var h=today.getHours();
+     var m=today.getMinutes();
+     var s=today.getSeconds();
+     // add a zero in front of numbers<10
+     m=checkTime(m);
+     s=checkTime(s);
+     document.getElementById('temporizador').innerHTML=h+":"+m+":"+s;
+     t=setTimeout('startTime()',500);
+ }
+
+ function checkTime(i){
+	 if (i<10) {
+	     i="0" + i;
+	 }
+	     return i;
+ }
+
+ startTime()
+
+
+</script>
+</body>
+</html>
