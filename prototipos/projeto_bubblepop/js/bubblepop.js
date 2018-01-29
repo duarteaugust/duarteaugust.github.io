@@ -210,7 +210,7 @@ function createBubble(){
         //debugando = setInterval(debugar, 100);
         $("#telaFinal").hide();
         $( "#info" ).hide();
-        $("#svgModelo").hide(); 
+        //$("#svgModelo").hide();   /* está ocultando todas as bolhas... */
     }
 
 
