@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Bubble Pop</title>
+      <link href="css/bubblepop.css" rel="stylesheet">
+</head>
+  <body>
+    <hr id="linhaSuperior">
+    <hr id="linhaEsquerda">
+    <hr id="linhaDireita">
+    <hr id="linhaInferior">
+
+    <div id="telaInicial" class="tela">
+      <img src="img/bubble.png" width="100" id="sapao222">
+      <h1>Bubble Pop</h1>
+      <hr>
+      <p>Você deve estourar todas as bolhas clicando sobre elas.</p>
+      <p id="">Clique no Iniciar para Começar</p>
+        <button id="iniciar" class="btn" type="button"> Iniciar! </button>
+    </div> <!-- fim da div telaInicial -->
+    
+    <div id="jogo">
+      <div id="info"></div><!-- fim da div info -->
+
+      
+        <svg id="svgModelo" class="girar">
+          <defs>
+            <filter id="f1">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+            </filter>
+            <radialGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%" fx="70%" fy="20%">
+              <stop id="cor" offset="0%"   style="stop-color:rgba(0,0,255, .5);   stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgba(255,255,255, .5); stop-opacity:1" />
+            </radialGradient>
+          </defs>
+          <circle id="bubbleModelo" class="pop"  cx="100" cy="100" r="45" stroke="#fff" stroke-width="1" fill="url(#grad1)" filter="url(#f1)" />
+        </svg>
+      
+
+    </div><!-- fim da div jogo -->
+
+    <div id="telaFinal" class="tela">
+      <h1>Bubble Pop 2015</h1>
+      <hr>
+      <br>
+      <p>PARABÉNS!</p>
+      <br>
+      <p id="score">...</p>
+       <img src="img/bubble.png" width="100">
+      <button id="jogarNovamente" class="btn" type="button"> Jogar Novamente </button>
+    </div>
+
+    <footer id="footer"><p>Bubble Pop 2015 - </p><a href="http://www.duarteaugust.eu.pn" target="blank">GAD</a></footer>
+    <audio src="bubblepop.mp3" id="snd"></audio> 
+    <audio id="vento" src="vento.mp3" id="snd"  loop></audio> 
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script  src="js/bubblepop.js"></script>
+  </body>
+</html>

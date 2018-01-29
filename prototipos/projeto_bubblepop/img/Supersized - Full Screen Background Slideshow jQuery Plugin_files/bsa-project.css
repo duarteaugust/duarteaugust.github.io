@@ -1,0 +1,11 @@
+#bsa-adpack{ margin:20px 0 0 20px; width:170px; }
+	body .adpacks{background:#fff;padding:10px;margin:15px 0 0;border:3px solid #eee; }
+	body .one .bsa_it_ad{background:transparent;border:none;font-family:inherit;padding:0 15px 0 0px;margin:0;text-align:right;}
+	body .one .bsa_it_ad:hover img{-moz-box-shadow:0 0 3px #000;-webkit-box-shadow:0 0 3px #000;box-shadow:0 0 3px #000;}
+	body .one .bsa_it_ad .bsa_it_i{ padding:0;float:left;margin:0 15px 0 15px;}
+	body .one .bsa_it_ad .bsa_it_i img{ padding:0; margin:0 0 10px 0;border:none;}
+	body .one .bsa_it_ad .bsa_it_t{padding:6px 0 0 0; color:#777; font:bold 13px "Helvetica Neue", Helvetica, Arial, sans-serif; text-align:left;}
+	body .one .bsa_it_ad .bsa_it_d{padding:6px 0 0 0; color:#444; font:11px "Helvetica Neue", Helvetica, Arial, sans-serif; text-align:left;}
+	body .one .bsa_it_p{display:none; }
+	body #bsap_aplink,body #bsap_aplink:hover, #bsap_aplink:visited{color:#73CCF2; display:block;font-size:10px;margin:12px 15px 0;text-align:right; font:11px "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		#bsap_aplink:hover{ text-decoration:none; }

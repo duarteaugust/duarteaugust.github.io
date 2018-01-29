@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style type="text/css">
+	body{
+		background-image: url(img/bg_bolhas.jpg);
+	}
+
+  .quadrado{
+      position: relative;
+      height: 100px;
+      width: 100px;
+      background-color: red;
+  }
+
+  .especial{
+    border: solid 4px blue;
+
+  }
+
+
+</style>
+<body>
+
+  <div id="quad" class="quadrado"></div>
+<h1>teste</h1>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+ $(document).ready(function(){
+
+
+    $(".quadrado").click(function(){
+        $("#quad").addClass('especial');
+      
+    })
+
+ });
+
+ </script>
+</body>
+</html>
+
+
+
+<!-- 
+
+
+
+    /*
+
+    ultimaBolaCriada = 1;
+     eval("var bubble" + ultimaBolaCriada + "= $('#quad').clone().appendTo( '#referencia' )");
+
+    $(bubble1).attr("id", "bubble1");
+    //$(bubble + "1").attr("id", "bubble1");
+      eval("var svg" + ultimaBolaCriada + "= $('#svgModelo').clone().appendTo( '#referencia' )"); //duplicando a estrutura svg
+      $(svg1).attr("id", "svg" + ultimaBolaCriada); //alterando id da nova estrutura
+      $("#svg1 > circle").attr('id', 'bubble1');  //alterando o id do circle interno a estrutura duplicada
+      moverBubble("#svg1");  //movendo a estrutura
+
+    */
+        <svg id="svg12" class="">
+          <defs>
+            <filter id="f2">
+              <feGaussianBlur in="SourceGraphic" stdDeviation=".5" />
+            </filter>
+            <radialGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%" fx="70%" fy="20%">
+              <stop offset="0%"   style="stop-color:rgba(0,255,0, .5);   stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgba(255,255,255, .5); stop-opacity:1" />
+            </radialGradient>
+          </defs>
+          <circle id="circle2"  cx="100" cy="100" r="45" stroke="blue" stroke-width="10" fill="url(#grad2)" filter="url(#f2)" />
+        </svg>
+      </div>
+  -->

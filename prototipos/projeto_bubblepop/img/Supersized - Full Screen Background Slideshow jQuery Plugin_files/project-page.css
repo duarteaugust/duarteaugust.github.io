@@ -1,0 +1,116 @@
+
+/*
+	Supersized Project Page
+	Stylesheet
+*/
+
+
+/* General
+-------------------*/
+*{ margin: 0; padding: 0; border:none; outline:none; }
+body{ background:#eee; height:100%; }
+	
+	img{ border:none; }
+	pre{ margin:5px 0 10px 0; padding:10px; background:#eaeaea; font:12.5px "Courier New", Courier,monospace}
+	hr{ background:none; color:transparent; height:1px; border:none; border-top:1px solid #ddd; display:block; width:100%; margin:15px 0; }
+	.clearfix{ clear:both; display:block; height:1px; visibility:none; width:100%; }
+	.center{ text-align:center; }
+	
+	/* Typography
+	-------------------*/
+	h1,h2,h3,h4{ clear:both; color:#222; font:bold 18px "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;  }
+		h2{ font-size:18px; margin:0 0 10px 0; }
+		h3{ font-size:16px; margin:20px 0 10px 0; }
+		h4{ font-size:14px; margin:15px 0 5px 0; }
+	p{ color:#555; font:12px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+		p a, p a:visited{ font-weight:bold; text-decoration:none; color:#555; border-bottom:1px solid #ccc; }
+			p a:hover{ text-decoration:none; color:#6caf1f; border-bottom:1px solid #aaa; }
+		p span.highlight{ background:#fff8af; }
+		
+/* Banner
+-------------------*/		
+#banner-wrapper{ width:100%; height:60px; margin:0; background:#0a0a0a; text-align:center;  }
+	#banner{ width:700px; margin:0px auto; padding:0 70px; text-align:left; }
+	
+	.logo{ float:left; width:250px; height:60px; }
+		.logo a{ height:60px; display:block; background:url('../img/supersized-logo.png') no-repeat 0 center; }
+	
+	ul#main-nav{ float:right; list-style:none; font:11px "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+		ul#main-nav li{ list-style:none; float:left; }
+		ul#main-nav a{ color:#eee; margin:0 10px; text-decoration:none; font-weight:bold; line-height:60px;  }
+			ul#main-nav a:hover{ color:#fff; border-bottom:1px solid #7bbe31; }
+		ul#main-nav a.button{ background:#7bbe31; color:#fff; padding:5px 8px; text-shadow:1px 1px 1px #6caf1f; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+			ul#main-nav a.button:hover{ background:#6caf1f; border:none; }
+			
+/* Content
+-------------------*/		
+#content-wrapper{ width:100%; text-align:center; background:#fafafa; }
+	#content{ width:700px; margin:0px auto; padding:20px 70px 30px 70px; text-align:left; }
+	
+	#content p{ line-height:150%; }
+	#content ul{ padding:0 0 3px 18px; }
+		#content li{ font:bold 12px "Helvetica Neue", Helvetica,Arial,sans-serif; color:#555; list-style-image: url('http://buildinternet.s3.amazonaws.com/theme-files/images/li-bullet.png'); }
+			#content li a, #content li a:visited{ font-weight:bold; text-decoration:none; color:#7bbe31; border:none; -webkit-font-smoothing: antialiased; }
+				#content li a:hover{ text-decoration:none; color:#111; border:none; }
+		#content ul.secondary{ margin:10px 0; }	
+			#content ul.secondary li{ margin:0 0 5px 0; font-weight:normal; }
+			
+		#content ul.gray{ margin:10px 0; padding:10px 0; list-style:none; background:#eaeaea; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }	
+			#content ul.gray li{ display:inline; margin:0 8px; font-weight:normal; list-style:none; }
+			#content ul.gray li a{ color:#333; padding:5px 8px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+				#content ul.gray li a:hover{ color:#666; }
+				#content ul.gray li a.active{ background:#666; color:#fff; text-shadow:1px 1px 1px #444; }
+			
+		#screenshot{ position:relative; width:700px; height:402px; margin:20px 0 0 0; background:url('../img/supersized-screen.jpg') no-repeat; }
+		
+		.big-button{ font:bold 18px "Helvetica Neue", Helvetica,Arial,sans-serif; }
+			.big-button a{ display:block; color:#fff; background:#7bbe31 url('../img/download-arrow.png') no-repeat 665px center; padding:8px 10px; margin:0; text-decoration:none; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; text-shadow:1px 1px 1px #6caf1f; -webkit-font-smoothing: antialiased;}
+				.big-button a:hover{ background-color:#6caf1f; }
+	
+	table{ color:#444; background:#fff; width:100%; font:12px "Helvetica Neue", Helvetica,Arial,sans-serif; }
+		table a, table a:visited{ font-weight:bold; text-decoration:none; color:#6caf1f; }
+			table a:hover{ text-decoration:none; color:#555; }
+		table td, table th{ width:25%; margin:0; padding:10px; }
+		table tr.even{ background:#eaeaea;  }
+		table tr.heading{ background:#2a2a2a; color:#eee; text-shadow:1px 1px 1px #111; -webkit-font-smoothing: antialiased; }
+	
+	a#back-top{ position:fixed; display:block; top:70px; left:0px; height:50px; width:50px; background:#7bbe31 url('../img/top-arrow.png') no-repeat center center; opacity:0; }
+		a#back-top:hover{ background-color:#6caf1f; }
+	
+	/* Circle
+	-------------------*/
+	.circle-wrap{ width:150px; height:150px; text-align:center; position:absolute; float:left; text-decoration:none; }	
+		.circle-wrap .circle{ position:absolute; top:50%; left:50%;  height:100px; width:100px; display:block; overflow:hidden; margin:-50px 0 0 -50px; background:#7bbe31; -moz-border-radius:75px; -webkit-border-radius:75px; border-radius:75px; }
+		.circle-wrap .label{ z-index:5; position:relative; top:50%; width:100%; display:block; margin-top:-7px; color:#fff; text-align:center; text-shadow:1px 1px 1px #6caf1f; font:bold 16px "Helvetica Neue", Helvetica,Arial,sans-serif; line-height:14px; -webkit-font-smoothing: antialiased; }
+		.demo-circle{ top:100px; left:200px; }
+		.download-circle{ top:100px; left:350px; }
+			.download-circle .label{ text-shadow:1px 1px 1px #000; }
+			.download-circle .circle{ background:#0a0a0a; }
+	
+	/* Triple Set
+	-------------------*/
+	ul#triple-set{ list-style:none; padding:0; margin:20px 0 0 0; }
+		ul#triple-set li{ list-style:none; float:left; width:212px; height:230px; margin:0 10px 0 0; padding:0 10px 0 10px; border-right:1px solid #ddd; }
+			ul#triple-set li.paypal{ padding:0 10px 0 0; }
+				#donate-form{ margin:20px 0 0 0; text-align:center; }
+			ul#triple-set li.posts{ }
+			ul#triple-set li.ads{ margin:0; padding-right:0; border:none; }
+			
+			ul#connected-links{ list-style:none; padding:0; }
+				ul#connected-links li{ width:auto; height:auto; list-style:none; padding:0; margin:10px 0 0 0; border:none; -webkit-font-smoothing: antialiased; }
+					#content ul#connected-links li a{ display:block; color:#fff; background:#7bbe31 url('../img/right-arrow.png') no-repeat right center; padding:8px 30px 8px 10px; margin:0; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; text-shadow:1px 1px 1px #6caf1f;}
+						#content ul#connected-links li a:hover{ background-color:#6caf1f; }
+	
+	
+	
+/* Footer
+-------------------*/		
+#footer-wrapper{ width:100%; height:100px; clear:both; text-align:center; }
+	#footer{ width:700px; margin:0px auto; padding:0 70px; text-align:left;  }	
+	#foot-links{ float:left; list-style:none; font:11px "Helvetica Neue", Helvetica,Arial,sans-serif; color:#555; }
+		#foot-links li{ list-style:none; display:inline; line-height:100px; }
+		#foot-links a, #foot-links a:visited{ font-weight:bold; text-decoration:none; color:#333; border-bottom:1px solid #ccc; }
+			#foot-links a:hover{ color:#111; border-bottom:1px solid #aaa; }
+	.buildinternet-logo{ float:right; margin-top:22px; }
+	
+	
