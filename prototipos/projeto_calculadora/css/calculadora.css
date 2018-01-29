@@ -1,0 +1,43 @@
+body{
+  background-color: #aaf;
+  background-image: url("bg19.jpg");  
+}
+
+
+
+.col-xs-12, .col-sm-6{
+  background-color: #aaa;
+  padding: 1px;
+}
+
+.btn-group{
+  padding: 1px;
+}
+
+input[type="text"]{
+  text-align: right;
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  box-shadow: 1px 1px 2px #333;    
+  -moz-box-shadow: 1px 1px 2px #333;
+  -webkit-box-shadow: 1px 1px 2px #333;
+  color: #0f0;
+  margin-top: 5px;
+}
+
+.right{
+  text-align: right;
+  -o-text-align: right;
+}
+
+input[type="text"]:disabled {
+  background-color: #333;
+  cursor: default;
+}
+
+footer {
+  font-style: italic;
+  padding-top: 2px;
+  text-align: center;
+}
