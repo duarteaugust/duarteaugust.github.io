@@ -22,7 +22,14 @@ html, body {
 }
 
 
+.btVoltarGaleria{
+    background: #FE3636!important;
+    color: #fff!important;
+}
 
+.thumbnail{
+    cursor: auto !important;
+}
 
 
 
@@ -126,12 +133,12 @@ body {
     color: #7ad;
 }
 .glyphicon-blackboard{
-    color: #f97e76;
+    color: #FE3636;
 }
 .glyphicon-info-sign{
     color: #F2AF61;
 }
-.icon-envelope{
+.glyphicon-envelope{
     color: #59b459;
 }
 
@@ -147,8 +154,17 @@ body {
 
 
 .redesSociais{
+    max-width: 40px;
+    height: auto;
     font-size: 40px;
     color: #59b459;
+}
+
+.facebook{
+    background-image: url(../img/facebook.png);
+    background:red;
+    width: 80px;
+    height: auto;
 }
 
 .tituloContato{
