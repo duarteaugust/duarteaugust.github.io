@@ -79,7 +79,6 @@ main{
 }
 
 /****************************** CARROSSEL  */
-/* */
 #slider{
     background-image: url("../img/bgs/pattern.png");
     background-color:#2873B5;
@@ -91,8 +90,21 @@ main{
 }
 
 
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+
+  html body main.pt-4 section#slider div#myCarousel.carousel.slide.gad_carousel div.carousel-inner.gad_carousel div.carousel-item div.container div.carousel-caption.text-center > img{
+    max-width: 90%;
+}
+
+
 /****************************** PROJETOS     */
-/*  */
 
 .my_projetos{
     _height: 300px;
@@ -178,7 +190,7 @@ main{
 .my_rodape{
     padding: 0;
     margin: 0;
-    _background-color:#333;
+    background-color:#333;
     background-image: url("../img/bgs/bg32.png");
     min-height: 400px;
 }
@@ -201,19 +213,7 @@ main{
     margin: 10px;
 }
 
-/* carousel */
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
 
-
-      html body main.pt-4 section#slider div#myCarousel.carousel.slide.gad_carousel div.carousel-inner.gad_carousel div.carousel-item div.container div.carousel-caption.text-center > img{
-        max-width: 90%;
-    }
 
 /* **********************************************************************************************************************************
 
