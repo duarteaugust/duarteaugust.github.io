@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testando imagens background</title>
+    <style>
+        body{background-color: #123;}
+
+        /*setup amostra de cor*/
+        #amostra{
+            width: 25px; 
+            height: 25px; 
+            border: solid silver 1px;
+            float: left;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px silver;
+        }
+        .white{background-color: white;}
+        .black{ background-color: black;}
+        .gray{ background-color: gray;}
+        .red{ background-color: red;}
+        .green{ background-color: green;}
+        .blue{ background-color: blue;}
+        .cyan{ background-color: cyan;}
+        .magenta{ background-color: magenta;}
+        .yellow{ background-color: yellow;}
+        
+        
+        hr {clear: both;}
+        a {padding: 10px; text-decoration: none; float: left;}
+        p {color: #fff; text-shadow: 1px 1px 2px black}
+        .wrapper { margin: auto; }
+        .txtCor {float: left; }
+        .txtImagem {display: block; padding: 0px; margin: 2px;}
+        
+    </style>
+    
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    
+</head>
+<body>
+   <p class='txtCor'>Cor do Background:</p>
+   <div class="white" id="amostra"></div>
+   <div class="black" id="amostra"></div>
+   <div class="gray" id="amostra"></div>
+   <div class="red" id="amostra"></div>
+   <div class="green" id="amostra"></div>
+   <div class="blue" id="amostra"></div>
+   <div class="cyan" id="amostra"></div>
+   <div class="magenta" id="amostra"></div>
+   <div class="yellow" id="amostra"></div>
+   <hr/>
+   <p class='txtImagem'>Imagem de Background:</p>
+   
+   <div class="wrapper">
+       <a href="#">Sem-Imagem</a>    
+
+        <script>
+
+            /*configurando links para extensão jpg*/
+            numJpg = 70;
+            initJpg = "<a href='#' data='jpg'>";
+            link = "bg";
+            extJpg = ".jpg";
+            end = "</a>";
+            for(i=1;i<= numJpg; i++){
+                document.write(initJpg + link + i + extJpg + end);
+                //<a href='#' data='jpg'> + bg + X + .jpg + </a>
+            }
+
+
+            /*configurando links para extensão png*/
+            numPng = 217;
+            initPng = "<a href='#' data='png'>";
+            extPng = ".png";
+
+            for(i=1; i<=numPng; i++){
+                document.write(initPng + link + i + extPng + end);
+            }
+            
+            
+           /*configurando links para extensão gif*/
+            numGif = 6;
+            initGif = "<a href='#' data='gif'>";
+            extGif = ".gif";
+
+            for(i=1; i<=numGif; i++){
+                document.write(initGif + link + i + extGif + end);
+            }
+            
+        </script>
+    </div>
+                    
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+                   
+            $( "div" ).on("mouseover", function() {
+                //$( "body" ).css( "background-color", "yellow" );
+                $( "body" ).css( "background-color", this.className );
+                //console.log(this.className);
+            });
+            
+            
+            $('a').on("mouseover", function(){
+                
+                //console.log('this: ' + this);  //ao concatenar o this faz referência ao documento e não ao objeto
+                //console.log(this);  //<a href="#" id="teste">teste</a>
+                //console.log(this.name); //vazio
+                //console.log(this.id); //recupera o id
+                //console.log(this.text); //recupera o conteúdo testando
+                
+                //$("body").css( "background-color", "pink");
+                
+                //var bgAtual = "url(backgrounds/bg1.svg)"
+                //$("body").css( "background-image", bgAtual);
+                
+                //var bgAtual = "url(backgrounds/bg1.svg)"
+                result = $(this).attr('data');
+                console.log(result);
+                
+                if (this.text == "Sem-Imagem"){
+                    $("body").css("background-image", "");
+                    //return;
+                }
+                
+                if ( $(this).attr('data') == 'jpg'){
+                    $("body").css("background-image", "url(backgrounds/jpg/" + this.text + ")");
+                }
+                
+                if ( $(this).attr('data') == 'png'){
+                    $("body").css("background-image", "url(backgrounds/png/" + this.text + ")");
+                }
+                
+               if ( $(this).attr('data') == 'gif'){
+                    $("body").css("background-image", "url(backgrounds/gif/" + this.text + ")");
+                }
+                
+            });  /*end $('a')*/
+            
+        });/*end $(document)*/
+    </script>
+    
+</body>
+</html>

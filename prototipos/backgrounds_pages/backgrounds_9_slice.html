@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Background</title>
+    <style>
+
+
+html{background-color: #ccc}
+
+/* configuração da paleta grande, externa*/        
+.paleta{width: 300px; height: 300px; border-radius: 10px; float: left; -moz-box-shadow: 10px 10px 5px #ddd; -webkit-box-shadow: 10px 10px 5px #ddd; box-shadow: 10px 10px 5px #888; margin: 10px;}
+            
+
+/* configuração da amostra interna*/
+.amostra{width: 100px; height: 100px; float: left; padding: 0; margin: 0; border:1px solid silver; border-radius: 10px; box-sizing:border-box;   -moz-box-sizing:border-box;   -webkit-box-sizing:border-box; text-align: center;}   
+
+        
+/*cada uma das 9 cores de fundo da paleta*/
+.corSolida1{background-color:#fff;} .corSolida2{background-color:#000;} .corSolida3{background-color:#ccc;} .corSolida4{background-color:#f00;} .corSolida5{background-color:#0f0;} .corSolida6{background-color:#00f;} .corSolida7{background-color:#ff0;} .corSolida8{background-color:#f0f;} .corSolida9{background-color:#0ff;}
+           
+    </style>
+    <script>
+        
+        /* configuração da classe .bgAmostraEXTENSÃO*/
+        totalPng = 216;  
+        numBgPng = 1;
+        initStylePng = ".bgAmostraPng"
+        midleStylePng = "{background-image: url(backgrounds/png/bg";
+        endStylePng= ".png);}";
+        
+        totalJpg = 70;  
+        numBgJpg = 1;
+        initStyleJpg = ".bgAmostraJpg"
+        midleStyleJpg = "{background-image: url(backgrounds/jpg/bg";
+        endStyleJpg= ".jpg);}";
+        
+        totalGif = 4;  
+        numBgGif = 1;
+        initStyleGif = ".bgAmostraGif"
+        midleStyleGif = "{background-image: url(backgrounds/gif/bg";
+        endStyleGif= ".gif);}";
+        
+        
+        
+       document.write("<style>");
+            /* Criando cada classe que chama cada backgroud diferente de cada extensão*/
+            for(numBgPng; numBgPng <= totalPng; numBgPng++){
+                  document.write(initStylePng + numBgPng + midleStylePng + numBgPng + endStylePng);
+                  //.bgAmostra + X + {background-image: url(backgrounds/bg + X + .png);}
+            }
+        
+            for(numBgJpg; numBgJpg <= totalJpg; numBgJpg++){
+                  document.write(initStyleJpg + numBgJpg + midleStyleJpg + numBgJpg + endStyleJpg);
+                  //.bgAmostra + X + {background-image: url(backgrounds/bg + X + .png);}
+            }
+        
+            for(numBgGif; numBgGif <= totalGif; numBgGif++){
+                  document.write(initStyleGif + numBgGif + midleStyleGif + numBgGif + endStyleGif);
+            }
+       
+            document.write("</style>");
+        </script>
+    </head>
+<body>
+  
+   <script>
+       //paletas extensão PNG - O laço externo cria a paleta e o interno aplica o background
+       numPaletaPng = 1;
+       for(numPaletaPng; numPaletaPng <= totalPng; numPaletaPng++){
+            document.write("<div class='paleta'>");
+            
+                initDivAmostra = "<div class='amostra corSolida";
+                corSolida = 1;
+                bgAmostraPng = " bgAmostraPng";
+                midleDiv = "'>"
+                endDiv = "</div>"
+                for(corSolida; corSolida <= 9; corSolida++){
+                    document.write(initDivAmostra + corSolida + bgAmostraPng + numPaletaPng + midleDiv +"bg"+ numPaletaPng+".png" + endDiv );
+                }
+           document.write("</div>"); //fim da div paleta
+       }
+
+    
+    //paletas extensão JPG
+    numPaletaJpg = 1;
+    for(numPaletaJpg; numPaletaJpg <= totalJpg; numPaletaJpg++){
+            document.write("<div class='paleta'>");
+            
+                initDivAmostra = "<div class='amostra corSolida";
+                corSolida = 1;
+                bgAmostraJpg = " bgAmostraJpg";
+                midleDiv = "'>"
+                endDiv = "</div>"
+                for(corSolida; corSolida <= 9; corSolida++){
+                    document.write(initDivAmostra + corSolida + bgAmostraJpg + numPaletaJpg + midleDiv +"bg"+ numPaletaJpg+".jpg" + endDiv );
+                }
+           document.write("</div>"); //fim da div paleta
+       } //fim do laço for
+    
+    </script>     
+  </body>
+</html>
