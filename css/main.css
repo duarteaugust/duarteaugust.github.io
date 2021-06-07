@@ -16,23 +16,6 @@ body{
     height: 0;
 }
 
-.modal-dialog-scrollable .modal-content{
-    max-width: 700px;
-}
-
-.img_interna_modal{
-    width: 95%;
-    height: auto;
-    margin: 5px auto;
-    text-align: center;
-    border-radius: 15px;
-}
-
-.modal-content {
-    margin: 0 auto;
-    text-align: center;
-}
-
 main{
     margin: 0;
     padding: 0;
@@ -135,6 +118,39 @@ html body main.pt-4 section#slider div#myCarousel.carousel.slide.gad_carousel di
     border: none;
 }
 
+.card-body {
+    padding: 5px 1rem;
+}
+
+.card-body p {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+
+/*      MODAL   */
+
+.modal-footer{
+    display: none;
+}
+
+.modal-dialog-scrollable .modal-content{
+    _max-width: 700px;
+}
+
+.img_interna_modal{
+    width: 95%;
+    height: auto;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.modal-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 /*      PERFIL */
 
@@ -157,6 +173,8 @@ html body main.pt-4 section#slider div#myCarousel.carousel.slide.gad_carousel di
 .w-65{width: 65%;}
 .w-85{width: 85%;}
 .w-95{width: 95%;}
+
+
 
 
 /*       CONTATO */
@@ -299,6 +317,11 @@ footer{
     /*   projetos */
     .-my_img_proj {
         width: 50%;
+    }
+    
+    /*   Modal */
+    .modal-footer{
+        display: contents;
     }
         
 }/* @media */
