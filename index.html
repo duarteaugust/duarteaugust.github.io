@@ -1,28 +1,25 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio de Projetos pessoais de Gabriel Duarte">
-    <meta name="author" content="Gabriel Duarte">
-    <meta name="generator" content="VSCode">
-    <title>Portifólio Gabriel Duarte</title>
-
-    <script type="text/javascript">
-      var qnte;
-      //var comImagens = false;
-    </script>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
+      <title>Portifólio Gabriel A. Duarte</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="descricao" content="Portifólio de Projetos pessoais de Gabriel A. Duarte">
+      <meta name="author" content="Gabriel Duarte">
+      <meta name="generator" content="VSCode">
+      <script src="js/projetos.js"></script>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/carousel.css" rel="stylesheet">
   </head>
   <body>
     
 <header id="navegacao">
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
     <div class="container">
-       <a class="navbar-brand fs-3 fst-italic text-primary" href="#"><img src="img/mini-logo.png" alt="logo DuarteAugust"> DuarteAugust</a>
+      <a class="navbar-brand fs-3 fst-italic text-primary" href="#"><img src="img/mini-logo.png" alt="logo DuarteAugust"> DuarteAugust</a>
+      
+      
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -161,94 +158,32 @@
         Projetos</h2>
         
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-md-4 g-3 my_img_proj">
-        <!-- -------------------------------------------------inicio da grade de thumbnails-->
+        <!-- inicio do LOOP da grade de thumbnails-->
+        <script type="text/javascript">
+              for (let i = 1; i < projetos.length; i++) {
+                  document.write("<div class='col'>")
+                      document.write("<div class='card shadow-sm'>")
+                          
+                          document.write("<a href='#' data-bs-toggle='modal' data-bs-target='#idModal' data-bs-caminho='"+projetos[i].caminho+"' data-bs-titulo='"+projetos[i].titulo+"' data-bs-desc='"+projetos[i].descricao+"' data-bs-qnte='"+projetos[i].qnteImgs+"'>")
+                              document.write("<img src='img/projetos/"+projetos[i].caminho+"/"+projetos[i].caminho+"1.jpg' class='img-thumbnail' alt='imagem de miniatura do projeto'>")
+                          document.write("</a>")
+                              
+                          document.write("<div class='card-body'>")
+                              document.write("<p>"+projetos[i].titulo+"</p>")
+                          document.write("</div>")
 
-          
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="5e_videos" qnte="3">
-                <img src="img/projetos/5e_videos/5e_videos1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="alfabicho" qnte="16">
-                <img src="img/projetos/alfabicho/alfabicho1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="ambar" qnte="5">
-                <img src="img/projetos/ambar/ambar1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="assistente_virtual" qnte="5">
-                <img src="img/projetos/assistente_virtual/assistente_virtual1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="avarento" qnte="5">
-                <img src="img/projetos/avarento/avarento1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="curso_cemig" qnte="4">
-                <img src="img/projetos/curso_cemig/curso_cemig1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="curso_estrategia" qnte="5">
-                <img src="img/projetos/curso_estrategia/curso_estrategia1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#idModal" data-bs-whatever="curso_hipertensao" qnte="5">
-                <img src="img/projetos/curso_hipertensao/curso_hipertensao1.jpg" class="img-thumbnail" alt="imagem de miniatura do projeto">
-              </a>
-              <div class="card-body">
-                <p class="card-text">This additional content. This content</p>
-              </div>
-            </div>
-          </div>
+                      document.write("</div>")
+                  document.write("</div>")
+              }//loop
+          </script>
+
+
+
 
     </div> <!-- row-->
   </div><!-- container-->
   <p class="invisible" id="nav_perfil">ponto de apoio para scroll</p>
-  </section> <!-- ------------------------------------------------------/my_projetos-->
+  </section> <!-- /my_projetos-->
   
   
   <!-- PERFIL -->
@@ -386,7 +321,6 @@
                   <img src="img/skype.png" alt="Rede social">
                 </a>
             </div>
-
             </div>
 
             <div class="col-md-7 themed-grid-col">
@@ -468,7 +402,7 @@
         </span>
       </div>
       <hr>
-<div class="text-center">
+    <div class="text-center">
 
   <p class="mb-1 text-center fst-italic my_txt-light">"Os céus proclamam a glória de Deus, e o firmamento anuncia as obras das suas mãos." Salmos 19:1</p>
   <img src="img/mini-logo.png" alt="Logo Gabriel">
@@ -478,142 +412,38 @@
     </div>
   </footer>
   
-  
-  
-  
 </main>
 
-
-
-<!-- Modal para exibir projetos -->
-<div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="idModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
+    <!-- Modal para exibir projetos -->
+    <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="idModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header"> 
+            <h5 class="modal-title" id="idModalTitle">tit</h5> 
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body align-items-center" id="id_modal_local_imgs">
+            <p class="descricaoProjeto"></p>
+            <!-- imagens carregadas no modal dinamicamente
+            <input type="text" class="form-control" id="recipient-name">
+            <p class="meuP"></p> 
+            <script type="text/javascript">
+                  console.log('criar as img aki: ' + qnte)
+                  for (let i = 0; i < qnte; i++) {
+                    console.log('criar as img aki: ' + qnte)
+                    document.write("<img src='txt1.png'>")
+                  }
+            </script>
+            <img class="minhaImg img-fluid img-thumbnail" id="img4" src="img1.png" alt="imagem do projeto">
+            -->
+          </div>
       
-      <div class="modal-header"> 
-        <h5 class="modal-title" id="idModalTitle">tit</h5> 
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
       </div>
-      
-      <div class="modal-body align-items-center" id="id_modal_local_imgs">
-        <!--<input type="text" class="form-control" id="recipient-name">
-         <p class="meuP"></p> 
-         <script type="text/javascript">
-          console.log('criar as img aki: ' + qnte)
-          for (let i = 0; i < qnte; i++) {
-            console.log('criar as img aki: ' + qnte)
-            document.write("<img src='txt1.png'>")
-          }
-        </script>
-        <img class="minhaImg" id="img1" src="txt1.png" alt="imagem do projeto">
-        <img class="minhaImg" id="img2" src="txt2.png" alt="imagem do projeto">
-        <img class="minhaImg img-fluid img-thumbnail" id="img3" src="txt3.png" alt="imagem do projeto">
-        <img class="minhaImg img-fluid img-thumbnail" id="img4" src="txt.png" alt="imagem do projeto">
-      -->
-      </div>
-  
     </div>
-  </div>
-</div>
 
-  
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      //var projetoAtual = "1"
-      function quem_e(prefixoProjeto){
-        projetoAtual = prefixoProjeto
-        console.log(prefixoProjeto);
-        //console.log(1);
-        //document.body.innerHTML = "<img src='img/projetos/5e_videos/5e_videos_4.jpg' alt='imagem detalhada sobre o projeto'>"
-      }
-    
-      function fn_criarImagens (qnte) {
-        for (let i = 1; i <= qnte; i++) {
-          console.log("cria novo elemento img " + i)
-          const  imgNova = document.createElement("img");
-          const id_modal_local_imgs = document.getElementById("id_modal_local_imgs");
-          imgNova.src = "txt1.png";
-          imgNova.id = "img"+i;
-          imgNova.class = "img_interna_modal";
-          imgNova.classList.add("img_interna_modal");
-          id_modal_local_imgs.appendChild(imgNova);
-        }
-        //comImagens = true;
-      }
-
-      var myModal = document.getElementById('idModal')
-      myModal.addEventListener('hide.bs.modal', function () {
-        console.log("fechou o modal")
-        var qnteElementos = document.getElementById('idModal').getElementsByClassName('img_interna_modal').length;
-        for (let i = 0; i < qnteElementos; i++) {
-            var elemento = document.querySelector(".img_interna_modal");
-            elemento.parentNode.removeChild(elemento);
-        }
-      })
-      
-      function removeImagensCriadas() {
-        console.log(11111);
-        //document.getElementsByClassName("img-thumbnail").remove()
-        var elemento = document.querySelector(".img_interna_modal");
-        elemento.parentNode.removeChild(elemento);
-      }
-
-
-      
-    var idModal = document.getElementById('idModal')
-    idModal.addEventListener('show.bs.modal', function (event) {
-          
-/*           if(comImagens){
-            removeImagensCriadas();
-          } 
-          console.log(event);
-          */
-          
-          // Button that triggered the modal
-          var button = event.relatedTarget
-          // Extract info from data-bs-* attributes
-          var recipient = button.getAttribute('data-bs-whatever')
-          var qnte = button.getAttribute('qnte')
-          fn_criarImagens (qnte);
-          // If necessary, you could initiate an AJAX request here
-          // and then do the updating in a callback.
-          //
-          // Update the modal's content.
-          var modalTitle = idModal.querySelector('.modal-title')
-          //var modalBodyInput = idModal.querySelector('.modal-body input')
-          //var modalBodyP = idModal.querySelector('.meuP')
-          //var modalImg = idModal.querySelector('.minhaImg')
-          modalTitle.textContent = 'Projeto ' + recipient;
-          /*
-          + " | n = " + qnte
-          var modalImg1 = idModal.querySelector('#img1')
-          var modalImg2 = idModal.querySelector('#img2')
-          var modalImg3 = idModal.querySelector('#img3')
-          var modalImg4 = idModal.querySelector('#img4')
-          */        
-          
-          for (let i = 1; i <= qnte; i++) {
-            
-            //var modalImg4 = idModal.querySelector('#img4')
-            eval("modalImg"+i+"=idModal.querySelector('#img"+i+"')")
-
-            //modalImg2.src = "img/projetos/"+recipient+"/"+recipient+"2.jpg"
-            eval("modalImg"+i+".src = 'img/projetos/"+recipient+"/"+recipient+i+".jpg'")
-            
-            //console.log("i = "+i+ " de "+ qnte + " --> ")
-          }
-    
-
-          //modalBodyInput.value = recipient
-          //modalBodyP.textContent = 'p conteúdo = ' + recipient
-          //modalImg.src = "img/projetos/"+recipient+"/"+recipient+"_1.jpg"
-         /*
-          modalImg2.src = "img/projetos/"+recipient+"/"+recipient+"2.jpg"
-          modalImg3.src = "img/projetos/"+recipient+"/"+recipient+"3.jpg"
-          */
-          //document.write();
-    })
-    
-    </script>
+    <script src="js/main_portifolio.js"></script>
   </body>
 </html>
