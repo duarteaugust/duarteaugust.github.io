@@ -1,0 +1,341 @@
+body{
+    background-color: #fff;
+}
+
+body,p,h1,h2,h3,h4,table,td,th,ul,ol,textarea,input{
+    font-family: "Ubuntu", Times, serif;
+}
+
+.header{
+    border-bottom: 30px solid #4eb74a;
+    padding-top: 20px;
+}
+
+.menu{
+    color: #4eb74a;
+}
+
+.text-verde{
+    color: #73a744;
+}
+
+.text-white{
+    color: #fff;
+}
+
+.text-cinza{
+    color:#444;
+}
+
+.bg-bege{
+    background-color: #f7e08a;
+}
+
+.bg-verde-1{
+    background-color: #accf67;
+}
+
+.bg-verde-2{
+    background-color: #c2db8e;
+}
+
+.bg-verde-3{
+    background-color: #02734f;
+}
+
+.bg-verde-4{
+    background-color: #9ec555;
+}
+
+.bg-azul{
+    background-color: #80ad98;
+}
+
+.bg-img-pitagoras{
+    background-image: url(../img/bg_material_escolar.jpg);
+}
+
+.bg-img-rodape{
+    background-image: url(../img/rodape.png);
+    background-position: top center;
+}
+
+.pd-b-10{
+    padding-bottom: 10px;
+}
+
+.pd-b-20{
+    padding-bottom: 20px;
+}
+
+.pd-b-25{
+    padding-bottom: 25px;
+}
+
+.pd-t-5{
+    padding-top: 5px;
+}
+
+.pd-t-10{
+    padding-top: 10px;
+}
+.pd-t-25{
+    padding-top: 25px;
+}
+
+.pd-t-50{
+    padding-top: 50;
+}
+
+.pd-t-55{
+    padding-top: 55px;
+}
+
+.pd-t-60{
+    padding-top: 60px;
+}
+
+.pd-t-65{
+    padding-top: 65px;
+}
+
+.btn-link, .btn-link:hover, .btn-link:active{
+    border-style: solid;
+    border-width: 1px;
+}
+
+.btn-link-green, .btn-link-green:hover, .btn-link-green:active{
+    border-color: green;
+    color: green !important;
+}
+.btn-link-cinza, .btn-link-cinza:hover, .btn-link-cinza:active{
+    border-color: #444;
+    color: #444 !important;
+}
+
+.btn-link-white, .btn-link-white:hover, .btn-link-white:active{
+    border-color: #fff;
+    color: #fff !important;
+}
+
+.banner{
+    margin-left: -35px;
+}
+
+.carousel-indicators li{
+    box-shadow: 0px 0px 7px 0px #777;
+}
+
+.coruja{
+    margin-top: -20px;
+}
+
+#map{
+    min-height: 400px;
+    background-color: #dedede;
+}
+
+.rodape{
+    position: relative;
+    z-index: 9999;
+    min-height: 525px;
+    margin-top: -230px;
+    padding-top: 415px;
+    
+}
+
+.ps-absolute{
+    position: absolute;
+}
+
+.ps-relative{
+    position: relative;
+}
+
+.txt-banner{
+    top:100px;
+    left: 800px;
+    color: #fff;
+}
+
+.aviao{
+    top:10px;
+    left: 225px;
+}
+
+.destaque{
+    font-weight: 1.5;
+}
+.txt15{
+    font-size: 15px;
+}
+
+.txt-bemVindo{
+    max-width: 600px;
+}
+
+.form-control {
+    background-color: #11814e;
+    color: #fff;
+}
+
+.btn-lupa{
+    background-color: #11814e;
+}
+
+.txt-block{
+    width: 300px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #73a744;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #73a744;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #02734f;
+}
+
+.navbar-default {
+    border-color: #02734f;
+}
+
+#h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bertholdo{
+   display: inline;
+}
+
+.bannerContent{
+    position: relative;
+    top: 300px;
+    display: block;
+}
+
+.btn-default {
+    color: #73a744;
+    background-color: #11814e;
+    border-color: #11814e;
+}
+
+.btn-default:hover{
+    background-color: #4eb74a;
+}
+
+.form-control {
+    border: none;
+}
+
+.form-control::-webkit-input-placeholder { color: white; }
+.form-control:-moz-placeholder { color: white; }
+.form-control::-moz-placeholder { color: white; }
+.form-control:-ms-input-placeholder { color: white; }
+
+
+
+
+.box1::before, .box1::after, .box2::before{
+    content: "";
+    position: absolute;
+}
+
+.box1::before{
+    width: 70px;
+    height: 75px;
+    background: url(../img/folha.png) no-repeat top center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.box1::after {
+    left: -16px;
+    top: -6px;
+    width: 147px;
+    height: 121px;
+    background: url(../img/globo_arvore.png) no-repeat top center;
+    margin-left: 431px;
+    margin-top: 20px;
+}
+
+@media (min-width: 200px) {
+    .logo-pitagoras {
+        margin: 5px;
+        top:20px;
+        left: 300px;
+        background-color: none;
+    }
+    .txt-pitagoras{
+        padding-top:60px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .logo-pitagoras {
+        margin: 5px;
+        top:20px;
+        left: 300px;
+        background-color: none;
+    }
+    .txt-pitagoras{
+        padding-top:60px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .logo-pitagoras {
+        margin: 5px;
+        top: 15px;
+        left: 415px;
+        background-color: none;
+    }
+    .txt-pitagoras{
+        padding-top:60px;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .logo-pitagoras {
+        margin: 5px;
+        top: 110px;
+        left: 235px;
+        background-color: none;
+    }
+    .txt-pitagoras{
+        padding-top:60px;
+    }
+}
+
+.box2::before {
+    left: -16px;
+    top: -6px;
+    width: 247px;
+    height: 221px;
+    background: url(../img/tv.png) no-repeat top center;
+    margin-left: 15px;
+    margin-top: 70px;
+}
+
+.mg-b-20{
+    margin-bottom: 20px;
+}
+
+.box2{
+    padding-bottom: 5px !important
+}
+
+.pd-box{
+    padding: 25px;
+}
