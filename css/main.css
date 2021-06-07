@@ -1,4 +1,10 @@
-/* GERAL */
+/* 
+
+    CSS REGRAS GERAIS 
+    Desenvolvido por Duarte August
+
+*/
+
 body{
     margin: 0 !important;
     padding: 0 !important;
@@ -38,12 +44,11 @@ main{
 }
 
 
+/*       BARRA DE MENU */
 
-/****************************** BARRA DE MENU */
 .mylink{
     list-style-type: none;
 }
-
 
 .sec_init{
     color: blue;
@@ -67,7 +72,6 @@ main{
     color: darkslategrey!important;
 }
 
-
 .navbar-collapse{
     -flex-basis: inherit;
     justify-content: flex-end;
@@ -75,20 +79,19 @@ main{
 
 .page-scroll{
     text-decoration: none;
-
 }
 
-/****************************** CARROSSEL  */
+
+/*       CARROSSEL  */
+
 #slider{
     background-image: url("../img/bgs/pattern.png");
     background-color:#2873B5;
 }
 
-
 .gad_carousel{
     margin-bottom: 0!important;
 }
-
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -96,15 +99,14 @@ main{
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
 
-
-  html body main.pt-4 section#slider div#myCarousel.carousel.slide.gad_carousel div.carousel-inner.gad_carousel div.carousel-item div.container div.carousel-caption.text-center > img{
+html body main.pt-4 section#slider div#myCarousel.carousel.slide.gad_carousel div.carousel-inner.gad_carousel div.carousel-item div.container div.carousel-caption.text-center > img{
     max-width: 90%;
 }
 
 
-/****************************** PROJETOS     */
+/*       PROJETOS     */
 
 .my_projetos{
     _height: 300px;
@@ -113,7 +115,6 @@ main{
     margin: 0px;
     background-image: url("../img/bgs/bg86.png");
     background-color:rgba(238, 63, 63, 0.486);
-
 }
 
 .titulo_projetos{
@@ -127,7 +128,6 @@ main{
 }
 
 .my_projetos .card p{
-    _color: crimson;
     margin-top: -10px;
 }
 
@@ -135,9 +135,10 @@ main{
     border: none;
 }
 
-/* PERFIL */
+
+/*      PERFIL */
+
 .my_perfil{
-    _height: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
@@ -157,7 +158,9 @@ main{
 .w-85{width: 85%;}
 .w-95{width: 95%;}
 
-/* CONTATO */
+
+/*       CONTATO */
+
 .my_contato{
     padding: 0;
     margin: 0;
@@ -165,10 +168,12 @@ main{
     min-height: 400px;
     background-color:rgba(58, 129, 58, 0.856);
 }
+
 .titulo_contato{
     padding-top: 10px;
     color:green;
 }
+
 .my_textarea{
     height: 236px !important;
 }
@@ -186,7 +191,12 @@ main{
     width: auto;
 }
 
-/* RODAPÉ */
+/*       RODAPÉ */
+
+footer{
+    padding-bottom: 10px !important;
+}
+
 .my_rodape{
     padding: 0;
     margin: 0;
@@ -214,16 +224,15 @@ main{
 }
 
 
+/* 
 
-/* **********************************************************************************************************************************
+ Início de Media Queries
 
- início de mediaquerys
-
- ************************************************************************************************************************************/
+ */
 
  @media only screen and (min-width: 254px) and (max-width: 1200px) {
     
-    /********************** CONTATO */
+    /*       CONTATO */
     .my_socialIcones img{
         height: 40px;
     }
@@ -233,17 +242,15 @@ main{
 
 @media only screen and (min-width: 254px) and (max-width: 768px) {
     
-    /********************** Barra de navagação */
+    /*       Barra de navagação */
+    
     html body header#navegacao nav.navbar.navbar-expand-md.navbar-light.fixed-top.bg-light div.container div#navbarCollapse.navbar-collapse.collapse.show div.d-flex.flex-row-reverse.bd-highlight{
         justify-content: center;
     }
     
+    /*   carousel */
     
-    
-    
-    /********************** carousel */
-    
-    /* já veio no carousel */
+    /* plugin carousel btsp */
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
@@ -268,37 +275,39 @@ main{
         font-size: 12px;
     }
     
-    
-    
 }/* @media */
+
 
 @media only screen and (min-width: 254px) and (max-width: 600px) {
     
-    /********************** MENU      */
+    /*       MENU      */
+
     .dropdown-menu[data-bs-popper] {
         left: -70px;
     }
 
 
-    /********************** carousel */
+    /*   carousel */
     #slider{
         height: 250px;
     }
+
     .carousel-inner .carousel-item{
         height: 18rem !important;
     }
 
-    /********************** projetos */
-.-my_img_proj {
-    width: 50%;
-}
-
-    
+    /*   projetos */
+    .-my_img_proj {
+        width: 50%;
+    }
+        
 }/* @media */
+
 
 @media only screen and (min-width: 254px) and (max-width: 469px) {
     
-    /********************** MENU      */
+    /*       MENU      */
+
     .gad_item_menu {
         text-align: center;
     }
@@ -312,7 +321,7 @@ main{
         padding-top: 10px !important;
     }
     
-    /********************** carousel */
+    /*       carousel */
     .carousel-inner .carousel-item{
         height: 14rem !important;
     }
@@ -320,14 +329,13 @@ main{
     div.carousel-item p {
         display: none;
     }
-
-
     
 }/* @media */
 
+
 @media only screen and (min-width: 254px) and (max-width: 380px) {
     
-    /********************** MENU      */
+    /*       MENU      */
     .dropdown-menu[data-bs-popper] {
         left: -120px;
         top: 30px;
