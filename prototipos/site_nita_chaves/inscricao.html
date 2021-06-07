@@ -1,0 +1,264 @@
+<html>
+<head>
+<link rel="stylesheet" href="css_nita_chaves.css" type="text/css">
+<title>inscri&ccedil;&atilde;o</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997, 2000 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(1);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns4)
+        document.MM_Time[0][0].obj = document["Layer1"];
+    else if (ns5)
+        document.MM_Time[0][0].obj = document.getElementById("Layer1");
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["Layer1"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(1, 100);
+    document.MM_Time[0][0].values = new Array(2);
+    if (ns5)
+        document.MM_Time[0][0].values[0] = new Array("249px", "252px", "256px", "259px", "262px", "266px", "269px", "273px", "276px", "279px", "283px", "286px", "289px", "293px", "296px", "299px", "303px", "306px", "310px", "313px", "316px", "320px", "323px", "326px", "330px", "333px", "336px", "340px", "343px", "347px", "350px", "353px", "357px", "360px", "363px", "367px", "370px", "373px", "377px", "380px", "384px", "387px", "390px", "394px", "397px", "400px", "404px", "407px", "410px", "414px", "417px", "421px", "424px", "427px", "431px", "434px", "437px", "441px", "444px", "447px", "451px", "454px", "458px", "461px", "464px", "468px", "471px", "474px", "478px", "481px", "484px", "488px", "491px", "495px", "498px", "501px", "505px", "508px", "511px", "515px", "518px", "521px", "525px", "528px", "532px", "535px", "538px", "542px", "545px", "548px", "552px", "555px", "558px", "562px", "565px", "569px", "572px", "575px", "579px", "582px");
+    else
+        document.MM_Time[0][0].values[0] = new Array(249,252,256,259,262,266,269,273,276,279,283,286,289,293,296,299,303,306,310,313,316,320,323,326,330,333,336,340,343,347,350,353,357,360,363,367,370,373,377,380,384,387,390,394,397,400,404,407,410,414,417,421,424,427,431,434,437,441,444,447,451,454,458,461,464,468,471,474,478,481,484,488,491,495,498,501,505,508,511,515,518,521,525,528,532,535,538,542,545,548,552,555,558,562,565,569,572,575,579,582);
+    document.MM_Time[0][0].values[0].prop = "left";
+    if (ns5)
+        document.MM_Time[0][0].values[1] = new Array("79px", "82px", "85px", "87px", "90px", "93px", "96px", "99px", "101px", "104px", "107px", "110px", "112px", "115px", "118px", "121px", "124px", "126px", "129px", "132px", "135px", "138px", "140px", "143px", "146px", "149px", "151px", "154px", "157px", "160px", "163px", "165px", "168px", "171px", "174px", "177px", "179px", "182px", "185px", "188px", "191px", "193px", "196px", "199px", "202px", "204px", "207px", "210px", "213px", "216px", "218px", "221px", "224px", "227px", "230px", "232px", "235px", "238px", "241px", "243px", "246px", "249px", "252px", "255px", "257px", "260px", "263px", "266px", "269px", "271px", "274px", "277px", "280px", "283px", "285px", "288px", "291px", "294px", "296px", "299px", "302px", "305px", "308px", "310px", "313px", "316px", "319px", "322px", "324px", "327px", "330px", "333px", "335px", "338px", "341px", "344px", "347px", "349px", "352px", "355px");
+    else
+        document.MM_Time[0][0].values[1] = new Array(79,82,85,87,90,93,96,99,101,104,107,110,112,115,118,121,124,126,129,132,135,138,140,143,146,149,151,154,157,160,163,165,168,171,174,177,179,182,185,188,191,193,196,199,202,204,207,210,213,216,218,221,224,227,230,232,235,238,241,243,246,249,252,255,257,260,263,266,269,271,274,277,280,283,285,288,291,294,296,299,302,305,308,310,313,316,319,322,324,327,330,333,335,338,341,344,347,349,352,355);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns4) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0].lastFrame = 100;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+<body background="IMAGENS/plano-de-fundo.gif" onLoad="MM_timelinePlay('Timeline1')">
+<div id="Layer1" style="position:absolute; left:249px; top:79px; width:47px; height:45px; z-index:1"><img src="IMAGENS/logo_nita_transparente.gif" width="45" height="41"></div>
+<table width="984" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td width="200" height="20" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="19" align="center" valign="middle" bgcolor="#0000FF"><strong><font color="#FFFFFF" size="3" face="Geneva, Arial, Helvetica, sans-serif">CURSOS 
+            DE 3 MESES</font></strong></td>
+        </tr>
+        <tr> 
+          <td height="1"></td>
+        </tr>
+      </table></td>
+    <td width="50" rowspan="7" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="50" height="391">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td width="683" rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="683" height="25">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td width="50" rowspan="7" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="50" height="391">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td width="1"></td>
+  </tr>
+  <tr> 
+    <td rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="3"></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <tr> 
+          <td height="214" align="center" valign="top"><p align="left"><font size="2" face="Geneva, Arial, Helvetica, sans-serif"><a href="artesanato%20em%20tecidos.html">Artesanato 
+              em Tecidos</a><br>
+              <a href="artesanatos%20diversos.html">Artesanatos Diversos</a><br>
+              <a href="cabeleireiro.html">Cabeleireiro</a><br>
+              <a href="corte%20e%20costura.html">Corte e Costura</a><br>
+              <a href="cozinheiro.html">Cozinheiro-Salgadeiro e Pizzaiolo</a><br>
+              <a href="digitacao.html">Digita&ccedil;&atilde;o</a><br>
+              <a href="informatica%20basica.html">Inform&aacute;tica B&aacute;sica</a><br>
+              <a href="informatica%20avancada.html">Inform&aacute;tica </a></font><a href="informatica%20avancada.html"><font size="2" face="Geneva, Arial, Helvetica, sans-serif">Avan&ccedil;ada</font></a><font size="2" face="Geneva, Arial, Helvetica, sans-serif"><br>
+              <a href="eletricidade%20predial.html">Eletricidade Predial</a><br>
+              <a href="eletronica%20basica.html">Eletr&ocirc;nica B&aacute;sica</a><br>
+              <a href="sintese%20Manuten%E7%E3o%20de%20micro.html">Manuten&ccedil;&atilde;o 
+              de Micro Computadores</a><br>
+              <a href="padaria%20e%20confeitaria.html">Padaria e Confeitaria</a></font><br>
+            </p></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+      </table></td>
+    <td height="5"></td>
+  </tr>
+  <tr> 
+    <td rowspan="3" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="683" height="25" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="683" height="25" bgcolor="#0000FF"><div align="center"><strong><font color="#FFFFFF" face="Geneva, Arial, Helvetica, sans-serif">INSCRI&Ccedil;&Otilde;ES</font></strong></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="120" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="683" height="120" valign="top"><blockquote>
+                    <p>&nbsp;</p>
+                    <p><font color="#0000FF" face="Geneva, Arial, Helvetica, sans-serif">:: 
+                      As inscri&ccedil;&otilde;es s&atilde;o realizadas de ter&ccedil;a 
+                      &agrave; quinta-feira.</font><br>
+                      <font color="#0000FF" face="Geneva, Arial, Helvetica, sans-serif">:: 
+                      Hor&aacute;rios: 7h00 &agrave;s 10h00. 13h00 &agrave;s 15h00. 
+                      18h30 &agrave;s 20h30.<br>
+                      :: As inscriss&otilde;es s&oacute; ser&atilde;o realizadas 
+                      pessoalmente.</font></p>
+                  </blockquote></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="25" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="683" height="25" bgcolor="#0000FF"><div align="center"><strong><font color="#FFFFFF" face="Geneva, Arial, Helvetica, sans-serif">PR&Eacute;-REQUISITOS</font></strong></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="171" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="683" height="171" valign="top"><p>&nbsp;</p>
+                  <blockquote> 
+                    <p><font color="#0000FF" face="Geneva, Arial, Helvetica, sans-serif">:: 
+                      03 Fotos 3x4;<br>
+                      :: c&oacute;pia da identidadede ou certid&atilde;o de nascimento;<br>
+                      :: <font size="2">Idade m&iacute;nima: 14 anos (menores 
+                      de 18 anos, devem estar acompanhados dos pais ou respons&aacute;veis.<br>
+                      :: Escolaridade m&iacute;nima: 5&ordf; s&eacute;rie.<br>
+                      :: As inscri&ccedil;&otilde;es devem ser feitas pessoalmente, 
+                      e com a contribui&ccedil;&atilde;o de R$10,00 reais.<br>
+                      </font></font><font color="#0000FF" face="Geneva, Arial, Helvetica, sans-serif"> 
+                      <strong>::</strong> <strong> <font size="2">NECESSITAMOS 
+                      DE COLABORA&Ccedil;&Otilde;ES MENSAIS PARA MANTERMOS NOSSOS 
+                      CURSOS</font> ::</strong></font></p>
+                    </blockquote></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <td height="212"></td>
+  </tr>
+  <tr> 
+    <td height="19" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="19" align="center" valign="middle" bgcolor="#0000FF"><strong><font color="#FFFFFF" size="3" face="Geneva, Arial, Helvetica, sans-serif">CURSOS 
+            DE 6 SEMANAS</font></strong></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+      </table></td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="112" align="center" valign="top"><p align="left"><font size="2" face="Geneva, Arial, Helvetica, sans-serif"><a href="bordados%20em%20pedraria.html">Bordados 
+              em Pedraria</a><br>
+              <a href="bijouterias.html">Cria&ccedil;&atilde;o e Montagem de Bijouteria</a><br>
+              <a href="decoracao%20de%20festas.html">Decora&ccedil;&atilde;o de 
+              Festas</a><br>
+              <a href="est%E9tica%20facial.html">Est&eacute;tica Facial</a><br>
+              <a href="manicure%20e%20pedicure.html">Manicure e Pedicure</a><br>
+              <a href="Sintese%20de%20manipula%E7%E3o%20de%20cosm%E9ticos.html">Manipula&ccedil;&atilde;o 
+              de Cosm&eacute;ticos</a><br>
+              <a href="vendedor%20consultor.html">Vendedor-Consultor</a></font></p></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+      </table></td>
+    <td height="110"></td>
+  </tr>
+  <tr> 
+    <td rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="683" height="25">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td height="2"></td>
+  </tr>
+  <tr> 
+    <td height="23"></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>

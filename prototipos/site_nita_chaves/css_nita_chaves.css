@@ -1,0 +1,29 @@
+/* CSS Document */
+body{
+	scrollbar-face-color:rgb(0,0,255);
+	scrollbar-highlight-color:rgb(13,0,76);
+	scrollbar-shadow-color:yellow;
+	scrollbar-3dlight-color:rgb(0,255,255);
+	scrollbar-arrow-color:rgb(0,255,255);
+	scrollbar-track-color:rgb(0,255,255);
+	scrollbar-darkshadow-color:black;
+	scrollbar-base-color:black;
+}
+input{
+	font-family:verdana;
+	font-size;10pt;
+	color:rgb90,0,255);
+	background-color:rgb(0,255,255);
+}
+A {
+text-decoration: none;
+position: relative;
+}
+A:LINK {
+text-decoration: none;
+position: relative;
+}
+A:VISITED {
+text-decoration: none;
+position: relative;
+}

@@ -1,0 +1,255 @@
+<html>
+<head>
+<link rel="stylesheet" href="css_nita_chaves.css" type="text/css">
+<title>mais informa&ccedil;&otilde;es</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997, 2000 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(1);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns4)
+        document.MM_Time[0][0].obj = document["Layer1"];
+    else if (ns5)
+        document.MM_Time[0][0].obj = document.getElementById("Layer1");
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["Layer1"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(1, 100);
+    document.MM_Time[0][0].values = new Array(2);
+    if (ns5)
+        document.MM_Time[0][0].values[0] = new Array("207px", "214px", "221px", "228px", "235px", "242px", "249px", "255px", "262px", "269px", "276px", "283px", "290px", "297px", "304px", "311px", "318px", "325px", "332px", "338px", "345px", "352px", "359px", "366px", "373px", "380px", "387px", "394px", "401px", "408px", "415px", "421px", "428px", "435px", "442px", "449px", "456px", "463px", "470px", "477px", "484px", "491px", "498px", "505px", "511px", "518px", "525px", "532px", "539px", "546px", "553px", "560px", "567px", "574px", "581px", "588px", "594px", "601px", "608px", "615px", "622px", "629px", "636px", "643px", "650px", "657px", "664px", "671px", "678px", "684px", "691px", "698px", "705px", "712px", "719px", "726px", "733px", "740px", "747px", "754px", "761px", "767px", "774px", "781px", "788px", "795px", "802px", "809px", "816px", "823px", "830px", "837px", "844px", "850px", "857px", "864px", "871px", "878px", "885px", "892px");
+    else
+        document.MM_Time[0][0].values[0] = new Array(207,214,221,228,235,242,249,255,262,269,276,283,290,297,304,311,318,325,332,338,345,352,359,366,373,380,387,394,401,408,415,421,428,435,442,449,456,463,470,477,484,491,498,505,511,518,525,532,539,546,553,560,567,574,581,588,594,601,608,615,622,629,636,643,650,657,664,671,678,684,691,698,705,712,719,726,733,740,747,754,761,767,774,781,788,795,802,809,816,823,830,837,844,850,857,864,871,878,885,892);
+    document.MM_Time[0][0].values[0].prop = "left";
+    if (ns5)
+        document.MM_Time[0][0].values[1] = new Array("13px", "16px", "19px", "23px", "26px", "29px", "32px", "36px", "39px", "42px", "45px", "49px", "52px", "55px", "58px", "61px", "65px", "68px", "71px", "74px", "78px", "81px", "84px", "87px", "91px", "94px", "97px", "100px", "104px", "107px", "110px", "113px", "116px", "120px", "123px", "126px", "129px", "133px", "136px", "139px", "142px", "146px", "149px", "152px", "155px", "158px", "162px", "165px", "168px", "171px", "175px", "178px", "181px", "184px", "188px", "191px", "194px", "197px", "200px", "204px", "207px", "210px", "213px", "217px", "220px", "223px", "226px", "230px", "233px", "236px", "239px", "242px", "246px", "249px", "252px", "255px", "259px", "262px", "265px", "268px", "272px", "275px", "278px", "281px", "285px", "288px", "291px", "294px", "297px", "301px", "304px", "307px", "310px", "314px", "317px", "320px", "323px", "327px", "330px", "333px");
+    else
+        document.MM_Time[0][0].values[1] = new Array(13,16,19,23,26,29,32,36,39,42,45,49,52,55,58,61,65,68,71,74,78,81,84,87,91,94,97,100,104,107,110,113,116,120,123,126,129,133,136,139,142,146,149,152,155,158,162,165,168,171,175,178,181,184,188,191,194,197,200,204,207,210,213,217,220,223,226,230,233,236,239,242,246,249,252,255,259,262,265,268,272,275,278,281,285,288,291,294,297,301,304,307,310,314,317,320,323,327,330,333);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns4) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0].lastFrame = 100;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+<body background="IMAGENS/plano-de-fundo.gif" onLoad="MM_timelinePlay('Timeline1')">
+<div id="Layer1" style="position:absolute; left:207px; top:13px; width:48px; height:43px; z-index:1"><img src="IMAGENS/LOGO-NITA.gif" width="45" height="41"></div>
+<table width="984" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td width="200" height="20" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="19" align="center" valign="middle" bgcolor="#0000FF"><strong><font color="#FFFFFF" size="3" face="Geneva, Arial, Helvetica, sans-serif">CURSOS 
+            DE 3 MESES</font></strong></td>
+        </tr>
+        <tr> 
+          <td height="1"></td>
+        </tr>
+      </table></td>
+    <td width="50" rowspan="7" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="50" height="391">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td width="683" rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="683" height="25">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td width="50" rowspan="7" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="50" height="391">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td width="1"></td>
+  </tr>
+  <tr> 
+    <td rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="3"></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <tr> 
+          <td height="214" align="center" valign="top"><p align="left"><font size="2" face="Geneva, Arial, Helvetica, sans-serif"><a href="artesanato%20em%20tecidos.html">Artesanato 
+              em Tecidos</a><br>
+              <a href="artesanatos%20diversos.html">Artesanatos Diversos</a><br>
+              <a href="cabeleireiro.html">Cabeleireiro</a><br>
+              <a href="corte%20e%20costura.html">Corte e Costura</a><br>
+              <a href="cozinheiro.html">Cozinheiro-Salgadeiro e Pizzaiolo</a><br>
+              <a href="digitacao.html">Digita&ccedil;&atilde;o</a><br>
+              <a href="informatica%20basica.html">Inform&aacute;tica B&aacute;sica</a><br>
+              <a href="informatica%20avancada.html">Inform&aacute;tica </a></font><a href="informatica%20avancada.html"><font size="2" face="Geneva, Arial, Helvetica, sans-serif">Avan&ccedil;ada</font></a><font size="2" face="Geneva, Arial, Helvetica, sans-serif"><br>
+              <a href="eletricidade%20predial.html">Eletricidade Predial</a><br>
+              <a href="eletronica%20basica.html">Eletr&ocirc;nica B&aacute;sica</a><br>
+              <a href="sintese%20Manuten%E7%E3o%20de%20micro.html">Manuten&ccedil;&atilde;o 
+              de Micro Computadores</a><br>
+              <a href="padaria%20e%20confeitaria.html">Padaria e Confeitaria</a></font><br>
+            </p></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+      </table></td>
+    <td height="5"></td>
+  </tr>
+  <tr> 
+    <td rowspan="3" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="683" height="25" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="683" height="25" bgcolor="#0000FF"><div align="center"><strong><font color="#FFFFFF" face="Geneva, Arial, Helvetica, sans-serif">MAIS 
+                    INFORMA&Ccedil;&Otilde;ES </font></strong></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="148" valign="top"><p>&nbsp;</p>
+            <blockquote> 
+              <p><font color="#0000FF"><font color="#0000FF" face="Geneva, Arial, Helvetica, sans-serif"><strong>:: 
+                </strong></font><font face="Geneva, Arial, Helvetica, sans-serif"><strong>Bairro 
+                1&ordm; de Maio, rua Volts. n&uacute;mero 06.</strong></font></font></p>
+              <p><font face="Geneva, Arial, Helvetica, sans-serif"><strong><font color="#0000FF">:: 
+                Telefone: 3433-2472</font></strong></font></p>
+              <p><font face="Geneva, Arial, Helvetica, sans-serif"><strong><font color="#0000FF">:: 
+                Pr&oacute;ximo &agrave; esta&ccedil;&atilde;o de metr&ocirc; S&atilde;o 
+                Gabriel </font></strong></font></p>
+            </blockquote></td>
+        </tr>
+        <tr> 
+          <td height="25" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="683" height="25" align="center" bgcolor="#0000FF"><strong><font color="#FFFFFF" face="Geneva, Arial, Helvetica, sans-serif">EVENTOS</font></strong></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="143" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="683" height="143"><blockquote> 
+                    <p><font color="#0000FF"><font color="#0000FF" face="Geneva, Arial, Helvetica, sans-serif"><strong>::</strong></font><strong><font face="Geneva, Arial, Helvetica, sans-serif"> 
+                      Festa de formatura dia 18 de dezembro no col&eacute;gio 
+                      MEC. </font></strong></font></p>
+                    <p><font face="Geneva, Arial, Helvetica, sans-serif"><strong><font color="#0000FF">:: 
+                      Sorteio da Rifa da APHDP pela Loteria Federal dia 27 de 
+                      novembro. </font></strong></font></p>
+                    <p><font face="Geneva, Arial, Helvetica, sans-serif"><strong><font color="#0000FF">:: 
+                      Venda da Agenda da A&ccedil;&atilde;o Solidariedade.</font></strong></font></p>
+                  </blockquote></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <td height="212"></td>
+  </tr>
+  <tr> 
+    <td height="19" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="19" align="center" valign="middle" bgcolor="#0000FF"><strong><font color="#FFFFFF" size="3" face="Geneva, Arial, Helvetica, sans-serif">CURSOS 
+            DE 6 SEMANAS</font></strong></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+      </table></td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="200" height="112" align="center" valign="top"><p align="left"><font size="2" face="Geneva, Arial, Helvetica, sans-serif"><a href="bordados%20em%20pedraria.html">Bordados 
+              em Pedraria</a><br>
+              <a href="bijouterias.html">Cria&ccedil;&atilde;o e Montagem de Bijouteria</a><br>
+              <a href="decoracao%20de%20festas.html">Decora&ccedil;&atilde;o de 
+              Festas</a><br>
+              <a href="est%E9tica%20facial.html">Est&eacute;tica Facial</a><br>
+              <a href="manicure%20e%20pedicure.html">Manicure e Pedicure</a><br>
+              <a href="Sintese%20de%20manipula%E7%E3o%20de%20cosm%E9ticos.html">Manipula&ccedil;&atilde;o 
+              de Cosm&eacute;ticos</a><br>
+              <a href="vendedor%20consultor.html">Vendedor-Consultor</a></font></p></td>
+        </tr>
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+        <!--DWLayoutTable-->
+      </table></td>
+    <td height="110"></td>
+  </tr>
+  <tr> 
+    <td rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="683" height="25">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td height="2"></td>
+  </tr>
+  <tr> 
+    <td height="23"></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>
