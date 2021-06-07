@@ -1,0 +1,151 @@
+body{background-color: #fff;}
+
+body,p,h1,h2,h3,h4,table,td,th,ul,ol,textarea,input{
+    font-family: 'Roboto', sans-serif;
+}
+
+.no-bullet{ list-style-type:none; }
+
+.hr-result{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: auto;
+    background-color: #000;
+    height: 3px;
+    width: 50px;
+    border: 1px solid #000;
+}
+
+.hr-separador{
+  border: 1px solid #eee;
+}
+
+a:hover > p {
+    color: #0053a3;
+}
+
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+  outline: 0;
+  border: 1px solid #ccc;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.chamada-txt {
+    width: 330px;
+    height: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: #666666;
+  }
+
+  p  .chamada-txt {
+    color: red;
+  }
+
+  .noticia-txt {
+    width: 330px;
+    height: 38px;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    color: #666666;
+  }
+
+  .chamada-txt-randon {
+    height: 50px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #666666;
+  }
+
+  .noticia-txt-randon {
+    height: 38px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #666666;
+  }
+
+.data-txt{
+   width: 250px;
+  height: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-align: left;
+  color: #666666;
+}
+
+.noticia-img{
+    max-width: 215px;
+    height: 144px;
+    align-self: center;
+    margin:auto;
+}
+
+.dropdown-toggle{
+  width: 150px;
+  text-align: left;
+}
+
+.filterOrder{
+  margin-left: -10px;
+}
+
+.btn .caret {
+    margin-left: 70px;
+    float: right;
+    margin: 6px 0;
+}
+
+#lupa{
+  cursor:Default;
+  background-color:#fafafa;
+  opacity: none;
+}
+
+#filtro{
+  padding: 10px;
+}
+
+#search{
+  background-color: #0053a3;
+}
+
+#search:hover{
+  background-color: #0055ff;
+}
+
+#conteudoBusca{
+  border-left: none;
+  background-color:#fafafa;
+}
+
+#filtroSet{
+  background-color:#fafafa;
+}
+
+#filtroOrdem{
+  color: #000;
+  text-decoration: none;
+}
+
+#filtroSet:focus, #filtroSet:hover {
+    color: #0053a3;
+}
