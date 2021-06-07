@@ -1,0 +1,314 @@
+<html>
+<head>
+<title>GAD SOFTWARE'S</title>
+<script type="text/javascript">
+function popini(url)
+{open(url, "popup");}
+function fechar ()
+{top.close();}
+function alerta ()
+{alert ("Você está na Página GAD SOFTWARE'S");}
+function confirme(){valor = confirm("GAD SOFTWARE'S");
+if (valor==true)
+alert ("Você pressionou OK");
+else
+alert ("Você pressionou Cancelar");}
+function nome () 
+{var nome = prompt("Por favor digite seu nome");
+if (nome != null && nome != "")
+{alert ("Olá " +nome+ "!");}
+}
+
+function botoes ()
+{function popbotoes(url){
+open(url, "popup", "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,copyhistory=0,target=subpopup,height=595,width=550");
+}
+popbotoes ("botoes.html");
+}
+
+function voltar ()
+{javascript: window.history.back()}
+function avancar()
+{javascript: window.history.forward()}
+
+function browser()
+{function popbrowser(url){
+open(url, "popup", "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,copyhistory=0,target=subpopup,height=595,width=550");
+}
+popbrowser ("popbrowser.html");
+}
+
+function naoclick()
+{function popbrowser(url){
+open(url, "popup", "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,copyhistory=0,target=subpopup,height=900,width=800");
+}
+popbrowser ("sacanagem.html");
+}
+
+function math()
+{function popbrowser(url){
+open(url, "popup", "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,copyhistory=0,target=subpopup,height=250,width=500");
+}
+popbrowser ("math.html");
+}
+
+</script>
+<body BACKGROUND=fundo1.gif>
+<INPUT type=button value="Fechar" onmouseover=fechar()>
+<INPUT type="button" value="Alerta" onclick="alerta()">
+<INPUT type="button" value="Confirme" onclick="confirme()">
+<INPUT type="button" value="Nome" onclick="nome()">
+<INPUT type="button" value="Imprimir" onclick="print()">
+<input type="button" value="Código dos Botoes" onclick="botoes()">
+<input type="button" value="Voltar" onclick=voltar()>
+<input type="button" value="Avançar" onclick=avancar()>
+<input type="button" value="Browser" onclick="browser()">
+<input type="button" value="Nao Click" onclick="naoclick()">
+<input type="button" value="Math" onclick="math()">
+<br>
+<script type="text/javascript">
+data = new Date();
+dia = data.getDate();
+mes = data.getMonth();
+ano = data.getFullYear();
+data = new Date();
+hora = data.getHours();
+minuto = data.getMinutes();
+meses = new Array(12);
+meses[0] = "Janeiro";
+meses[1] = "Fevereiro";
+meses[2] = "Março";
+meses[3] = "Abril";
+meses[4] = "Maio";
+meses[5] = "Junho";
+meses[6] = "Julho";
+meses[7] = "Agosto";
+meses[8] = "Setembro";
+meses[9] = "Outubro";
+meses[10] = "Novembro";
+meses[11] = "Dezembro";
+totaldata = "Hoje é dia "+dia+" de "+meses[mes]+" de "+ano;
+totaltempo = "Agora são "+hora+" hora(s) e "+minuto+" minuto(s)";
+document.write(totaldata.fontcolor('#00ffff'));
+document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write(totaltempo.fontcolor('#00ffff'));
+</script>
+</head>
+<link rel="stylesheet" href="estilo.css" type="text/css">
+<body topmargin="4px" leftmargin="4px" SCROLL="no">
+
+<table border="0" width="100%">
+  <tr> 
+    <td ID="TipArea" align="center"><a href="javascript:goNext()" class="clickable" onmouseover="this.style.color='cyan';return showName()" onfocus="this.style.color='red';return showName()" onmouseout="status='';this.style.color='darkblue'" onblur="status='';this.style.color='darkblue'"><strong>Próxima 
+      Frase</strong></a> </td>
+  </tr>
+
+  <tr> 
+    <td ID="TipArea" width="1024" align="center"> <div ID="Tip0" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;É Quando estamos acordados que 
+          temos vontade de sonhar&#8221;.</font></h6>
+      </div>
+      <div ID="Tip1" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Quer dizer nunca tantos tiveram 
+          tanto a agradecer a tão poucos&#8221;.</font></h6>
+      </div>
+      <div ID="Tip2" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;O que traz o amor e o que o 
+          leva de volta poderia, neste momento, simplesmente leva-o de volta!&#8221;.</font></h6>
+      </div>
+      <div ID="Tip3" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Nunca encontraremos nos outros 
+          as respostas para nós mesmos&#8221;.</font></h6>
+      </div>
+      <div ID="Tip4" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Não espere dos outros o que 
+          não pode ter de si mesmo&#8221;.</font></h6>
+      </div>
+      <div ID="Tip5" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;A escada da sabedoria são os 
+          profundos pensamentos&#8221;.</font></h6>
+      </div>
+      <div ID="Tip6" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;A escada da sabedoria são os 
+          profundos pensamentos&#8221;.</font></h6>
+      </div>
+      <div ID="Tip7" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Os melhores sons são os que 
+          não podemos ouvir&#8221;.</font></h6>
+      </div>
+      <div ID="Tip8" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Aquele que busca no tempo suas 
+          fantasias, nada mais faz do que tentar <br>
+		esquecer do tempo que futuramente 
+          buscará lembrar&#8221;.</font></h6>
+      </div>
+      <div ID="Tip9" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Não levarei somente o que me 
+          pertencer, mas tudo o que houver de melhor&#8221;.</font></h6>
+      </div>
+      <div ID="Tip10" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Enquanto nada contrariar a lei 
+          da gravidade, tudo estará caindo bem&#8221;.</font></h6>
+      </div>
+      <div ID="Tip11" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;A vida acabou, e a morte se 
+          esquece de me buscar&#8221;.</font></h6>
+      </div>
+      <div ID="Tip12" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Quando não houver mais nada 
+          par ser escrito, só faltara o ponto final&#8221;.</font></h6>
+      </div>
+      <div ID="Tip13" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;O Acaso só favorece a mente 
+          preparada&#8221;.</font></h6>
+      </div>
+      <div ID="Tip14" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;O tempo nos ensina a não esperar 
+          nada de ninguém, mas ainda não aprendi esta lição&#8221;.</font></h6>
+      </div>
+      <div ID="Tip15" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Deixemos de lado o universo 
+          e preocupemos com o nosso mundo&#8221;.</font></h6>
+      </div>
+      <div ID="Tip16" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;É quando estamos acordados que 
+          sonhamos mais alto&#8221;.</font></h6>
+      </div>
+      <div ID="Tip17" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Para todo mal há uma cura&#8221;.</font></h6>
+      </div>
+      <div ID="Tip18" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Use as coisas, ame as pessoas&#8221;.</font></h6>
+      </div>
+      <div ID="Tip19" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;A infelicidade humana esta na 
+          razão direta das necessidades ilusórias que criamos&#8221;.</font></h6>
+      </div>
+      <div ID="Tip20" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Algumas coisas dependem muito 
+          de você, outras só dependem de você&#8221;.</font></h6>
+      </div>
+      <div ID="Tip21" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;O rei que abusa da força e do 
+          poder, para negar o direito e exercer a tirania, tem por certo, <br>
+		a alma 
+          repleta de todas as mercadorias do diabo&#8221;.</font></h6>
+      </div>
+      <div ID="Tip22" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Todo homem que não quer mentir, 
+          tem o direito de permanecer calado&#8221;.</font></h6>
+      </div>
+      <div ID="Tip23" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Alguns fazem questão de almoçar 
+          junto com a fome&#8221;.</font></h6>
+      </div>
+      <div ID="Tip24" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Alguns fazem questão de almoçar 
+          junto com a fome&#8221;.</font></h6>
+      </div>
+      <div ID="Tip25" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Os homens não conhecem as verdadeiras 
+          respostas; <br>
+		Alguns perguntam, enquanto outros tentam responder&#8221;.</font></h6>
+      </div>
+      <div ID="Tip26" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;DEUS aritimisou o céu e a terra&#8221;.(Platão)</font></h6>
+      </div>
+      <div ID="Tip27" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;DEUS fala ao mundo pelas mãos 
+          dos generosos&#8221;.(Gibram)</font></h6>
+      </div>
+      <div ID="Tip28" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;É inteiramente vão o saber que 
+          não serve ao sábio&#8221;.(Cícero)</font></h6>
+      </div>
+      <div ID="Tip29" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Maktub! Estava escrito! A flecha 
+          solta no ar exclama cheia de alegria: <br>
+		&#8216;Por Allah! Sou livre!&#8217; 
+          Engana-se! Já tem o seu destino marcado pela pontaria do atirador.&#8221;(Tagore)&#8221;.</font></h6>
+      </div>
+      <div ID="Tip30" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Quem de repente se enfurece 
+          é estulto&#8221;.(Salomão)</font></h6>
+      </div>
+      <div ID="Tip31" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Quem é prudente, dissimula o 
+          insulto&#8221;.</font></h6>
+      </div>
+      <div ID="Tip32" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;A verdade não é monopólio de 
+          ninguém, é patrimônio comum das inteligências&#8221;.(Leonel França)</font></h6>
+      </div>
+      <div ID="Tip33" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Aqui estou a teu lado, combatente, 
+          árabe amigo, meu amigo e irmão!<br>
+&nbsp;Por teu passado, pelo teu presente, por teu futuro eu te estendo a mão!&#8221; (Judas Isgorogota).</font></h6>
+      </div>
+      <div ID="Tip34" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Um dia ainda será o último; 
+          esteja sempre pronto&#8221;.</font></h6>
+      </div>
+      <div ID="Tip35" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3"> &#8220;Pela porta de sonhos 
+          só passam esperanças&#8221;.</font></h6>
+      </div>
+      <div ID="Tip36" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Não existe eu sabia. Existe 
+          eu nunca soube&#8221;.</font></h6>
+      </div>
+      <div ID="Tip37" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Acredite em algo e confie em 
+          si mesmo&#8221;.</font></h6>
+      </div>
+      <div ID="Tip38" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;A pobreza também é nobre&#8221;.</font></h6>
+      </div>
+      <div ID="Tip39" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Lá luna é gonfia de luce!&#8221;.</font></h6>
+      </div>
+      <div ID="Tip40" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Não critique um tolo por sua 
+          ignorância, mas sim por seu descaso&#8221;.</font></h6>
+      </div>
+      <div ID="Tip41" Style="display:none;"> 
+        <h6><font color="#00FFFF" size="3">&#8220;Não sabemos nem o que queremos 
+          saber&#8221;.</font></h6>
+      </div></td>
+  </tr>
+</table>
+
+<p><br class="userData" id="myData">
+<script LANGUAGE="JavaScript" FOR="window" EVENT="onload">
+Load();
+</script><script>
+var i=0;
+var nTips=42;
+
+function Load() {
+
+	var d = new Date();
+	i =  ((d.getMonth() * 31) + d.getDate()) %nTips;
+	if (i==null) i=0;
+		eval("document.all.Tip"+i+".style.display=''");
+}
+
+
+function goNext()
+{
+	eval("document.all.Tip"+i+".style.display='none'");
+	i=(((i%nTips)+1)%nTips);
+	eval("document.all.Tip"+i+".style.display=''");
+}
+
+function showName() {
+	window.status = event.srcElement.innerText;
+	return true;
+}
+
+</script> </p>
+</body>
+</html>
+
+</body>
+</html>

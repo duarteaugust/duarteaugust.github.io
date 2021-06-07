@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR></HEAD>
+<html>
+<head>
+<style>
+<!--
+#leftright, #topdown{
+position:absolute;
+left:0;
+top:0;
+width:1px;
+height:1px;
+layer-background-color:black;
+background-color:blue;
+z-index:100;
+font-size:1px;
+}
+-->
+</style>
+<bgsound src=logon.wav loop=1>
+<title>GAD SOFTWARE'S</title>
+<FONT COLOR="#00ffFF">
+<center><IMG SRC="bbrasil.GIF" ALT="GAD SOFTWARE'S!"></center>
+<h1 align=center>Aprendendo Java Script</H1>
+<center>Página em Construção</center>
+</font>
+<h2> Concatenação de Variáveis </H2>
+<script type="text/javascript">
+texto1 = "GAD";
+texto2 = "SOFTWARE'S";
+texto3 = "AZUL";
+texto = texto1+ " " +texto2+ " "+texto3;
+document.write(texto.fontcolor('#00FFFF'));
+</script>
+<br>Este escript foi criado para testar a 
+criação e concatenaçãode variáveis.
+e para tal foi utilizando o seguinte código <br><br>
+script language="LiveScript"><br>
+script type="text/javascript"><br>
+texto1 = "GAD";<br>
+texto2 = "SOFTWARE'S";<br>
+texto3 = "VERMELHO";<br>
+texto = texto1+ " " +texto2+ " "+texto3;<br>
+document.write(texto.fontcolor('#00FFFF'));<br>
+/script<br>
+
+<br>
+
+<h2> Continue </H2>
+<script type="text/javascript">
+for (var x = 0; x < 20; x++)
+{if (x==10){continue}document.write(x+" ");}
+</script>
+<br>
+Este escript foi criado para testar a 
+funçao continue ignorando a ocorrência do número 10 
+e para tal foi utilizando o seguinte código <br><br>
+script type="text/javascript"<br>
+for (var x = 0; x < 20; x++)<br>
+{if (x==10){continue}document.write(x+" ");}<br>
+/script<br>
+
+<br>
+<h2> For e Break </H2>
+<script type="text/javascript">
+for (var x = 0; x < 30; x++)
+{if (x==29){break}document.write(x+" ");}
+</script>
+<br>
+Este escript foi criado para testar a 
+funçao For e break cancelando a contagem de 0 a 30 exatamente no número 29
+e para tal foi utilizando o seguinte código <br><br>
+script type="text/javascript"><br>
+for (var x = 0; x < 30; x++)<br>
+{if (x==29){break}document.write(x+" ");}<br>
+</script<br>
+
+<br>
+<h2> While </H2>
+<script type="text/javascript">
+i = 2
+while (i < 100)
+{
+document.write(i);
+i *=2;
+document.write(" multiplicado por 2 gera " + i + "<br>");
+}
+</script>
+<br>
+Este escript foi criado para testar a funçao 
+While, de forma que enquanto a variável i fosse menor que 100 ela seria multiplicada por 2
+e para tal foi utilizando o seguinte código JVS<br><br>
+script type="text/javascript"><br>
+i = 2<br>
+while (i < 100)<br>
+{<br>
+document.write(i);i *=2;<br>
+document.write(" multiplicado por 2 gera " + i + "<br>");<br>
+}<br>
+/script<br>
+
+<br>
+<h2> If... </H2>
+<script type="text/javascript">
+x = 1;
+document.write(x);
+if (x < 10)
+{
+document.write(" é menor que 10.".fontcolor('#00ffff'));
+}
+if (x == 10)
+{
+document.write(" (valor de x) é igual a 10.");
+}
+if (x > 10)
+{
+document.write(" é maior que 10.");
+}
+</script>
+<br>
+Este escript foi criado para testar a funçao 
+if, de forma que, retorne se o valor de x é maior, menor ou igual a 10
+e para tal foi utilizando o seguinte código JVS<br><br>
+script type="text/javascript"><br>
+x = 1;<br>
+document.write(x);<br>
+if (x < 10)<br>
+{document.write(" é menor que 10.");}<br>
+if (x == 10)<br>
+{document.write(" (valor de x) é igual a 10.");}<br>
+if (x > 10)<br>
+{document.write(" é maior que 10.";}<br>
+</script<br>
+
+<br>
+<h2> If... Else... </H2>
+<script type="text/javascript">
+x = 19;
+if (x>10)
+{document.write (" (valor da variável x)  maior que 10".fontcolor('#00ffff'));}
+else
+{alert ("  x menor que 10");}
+</script>
+<br>
+Este escript foi criado para testar a funçao 
+if e Else, de forma que, retorne se o valor de x é maior, ou menor que 10
+e para tal, foi utilizando o seguinte código JVS<br><br>
+script type="text/javascript"><br>
+x = 19;<br>
+if (x>10)<br>
+{document.write (" (valor da variável x)  maior que 10".fontcolor('#00FFFF'));}<br>
+else<br>
+{alert ("  x menor que 10");}<br>
+/script><br>
+</head>
+<body BACKGROUND=fundo2.gif text=write bgProperties=fixed>
+<body background=fundo1.gif text=write bgProperties=fixed;>
+<div id="leftright" style="width:expression(document.body.clientWidth-2)"></div>
+<div id="topdown" style="height:expression(document.body.clientHeight-2)"></div>
+
+<script language="JavaScript1.2">
+<!--
+
+/*
+Document crosshair Script- 
+By Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more free DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+if (document.all&&!window.print){
+leftright.style.width=document.body.clientWidth-2
+topdown.style.height=document.body.clientHeight-2
+}
+else if (document.layers){
+document.leftright.clip.width=window.innerWidth
+document.leftright.clip.height=1
+document.topdown.clip.width=1
+document.topdown.clip.height=window.innerHeight
+}
+
+
+function followmouse1(){
+//move cross engine for IE 4+
+leftright.style.pixelTop=document.body.scrollTop+event.clientY+1
+topdown.style.pixelTop=document.body.scrollTop
+if (event.clientX<document.body.clientWidth-2)
+topdown.style.pixelLeft=document.body.scrollLeft+event.clientX+1
+else
+topdown.style.pixelLeft=document.body.clientWidth-2
+}
+
+function followmouse2(e){
+//move cross engine for NS 4+
+document.leftright.top=e.y+1
+document.topdown.top=pageYOffset
+document.topdown.left=e.x+1
+}
+
+if (document.all)
+document.onmousemove=followmouse1
+else if (document.layers){
+window.captureEvents(Event.MOUSEMOVE)
+window.onmousemove=followmouse2
+}
+
+function regenerate(){
+window.location.reload()
+}
+function regenerate2(){
+setTimeout("window.onresize=regenerate",400)
+}
+if ((document.all&&!window.print)||document.layers)
+//if the user is using IE 4 or NS 4, both NOT IE 5+
+window.onload=regenerate2
+
+//-->
+</script>
+<link rel="stylesheet" href="estilo.css" type="text/css">
+<p>
+<br><br>
+<CENTER><IMG SRC="brasil.GIF" ALT="GAD SOFTWARE'S!"></center>
+<center>Site Criado Por Gabriel Augusto.<br>
+Na Web Desde 28 de Abril de 2005.<br>
+<script language="JavaScript">
+document.write("Última modificação " + document.lastModified);
+</script> </font></td>
+
+</body>
+</html>
